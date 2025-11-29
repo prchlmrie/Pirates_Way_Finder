@@ -14,6 +14,8 @@ This repository uses a multi-branch structure for organized development:
 
 ## 📸 Interface
 
+![Recording 2025-11-29 090423 (online-video-cutter com) (online-video-cutter com) (2)](https://github.com/user-attachments/assets/2552d193-3606-47d6-bb38-9b9611befc20)
+
 
 ## 📸 Algorithm Comparison
 
@@ -238,20 +240,6 @@ Update the API base URL in `frontend_pirates_way_finder/api/mapApi.js`:
 ```javascript
 const BASE_URL = "http://your-backend-ip:8000";
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-<!-- Add your license information here -->
-
-## 👥 Authors
 
 <!-- Add author information here -->
 
