@@ -241,9 +241,3 @@ Update the API base URL in `frontend_pirates_way_finder/api/mapApi.js`:
 const BASE_URL = "http://your-backend-ip:8000";
 ```
 
-<!-- Add author information here -->
-
-## 🙏 Acknowledgments
-
-<!-- Add acknowledgments here -->
-
