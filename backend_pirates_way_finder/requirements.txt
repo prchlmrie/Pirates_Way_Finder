@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+networkx
+pymongo
+pydantic[email]
+python-jose
+passlib[argon2]
+python-multipart
+Pillow
+matplotlib
+numpy
