@@ -1,0 +1,204 @@
+.ratings-container {
+  padding-bottom: 50px;
+}
+
+h1 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* --- SEARCH BAR STYLES --- */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.search-bar-container:focus-within {
+  border-color: #8B0000; /* Maroon border on focus */
+}
+
+.search-icon {
+  color: #888;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.no-results {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}
+/* ------------------------ */
+
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* --- The Card --- */
+.location-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.location-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- Header (The Drop Bar) --- */
+.location-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 1px solid transparent;
+}
+
+.location-card.expanded .location-header {
+  border-bottom: 1px solid #eee;
+  background-color: #fffbfc;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.location-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Category Tags */
+.category-tag {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.category-tag.office { background-color: #E8F5E9; color: #2E7D32; }
+.category-tag.classroom { background-color: #F3E5F5; color: #7B1FA2; }
+.category-tag.laboratory { background-color: #FCE4EC; color: #C2185B; }
+.category-tag.amenity { background-color: #FFF8E1; color: #F57F17; }
+.category-tag.library { background-color: #E3F2FD; color: #1565C0; }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #888;
+}
+
+.review-count {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* --- Reviews Section --- */
+.reviews-section {
+  background-color: #fafafa;
+  padding: 20px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.review-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.user-icon { color: #bbb; font-size: 20px; }
+.review-date { color: #999; font-size: 12px; }
+
+.review-body {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-comment {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Rating Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  min-width: 90px;
+  justify-content: center;
+}
+
+.badge.good { background-color: #C8E6C9; color: #2E7D32; }
+.badge.not-bad { background-color: #FFF9C4; color: #FBC02D; }
+.badge.bad { background-color: #FFCDD2; color: #C62828; }

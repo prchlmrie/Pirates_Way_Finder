@@ -1,0 +1,112 @@
+.signup-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/welcome-bg.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Layer 1: Overlay */
+.signup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 0, 0, 0.75); /* Maroon */
+  z-index: 1;
+}
+
+/* Layer 2: Path */
+.signup-path {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-width: 1200px;
+  height: auto;
+  max-height: 40vh;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Layer 3: Content */
+.signup-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.signup-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.signup-header img { width: 35px; }
+.signup-header h2 { color: white; font-size: 22px; margin: 0; font-weight: bold; }
+
+.signup-card {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  /* Margin to keep it above the path visually */
+  margin-bottom: 40px; 
+}
+
+.signup-card h3 { margin: 0 0 5px 0; font-size: 24px; color: #333; }
+.signup-card p { color: #888; margin-bottom: 20px; font-size: 14px; }
+
+.form-group { text-align: left; margin-bottom: 12px; }
+.form-group label { display: block; font-size: 12px; font-weight: bold; margin-bottom: 5px; color: #333; }
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.signup-btn:hover { background-color: #555; }
+
+.login-link {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.login-link a {
+  color: #8B0000;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.login-link a:hover { text-decoration: underline; }
