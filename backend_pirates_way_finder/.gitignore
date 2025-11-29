@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.example
+.venv/
+venv/
+
+# Firebase service account (do NOT commit)
+serviceAccountKey.json
+
+# OS
+.DS_Store
+Thumbs.db
