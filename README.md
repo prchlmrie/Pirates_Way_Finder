@@ -7,13 +7,17 @@ A comprehensive indoor navigation application designed to help users navigate th
 This repository uses a multi-branch structure for organized development:
 
 - **`main`**: Main branch containing project overview and documentation
-- **`develop`**: Development branch (currently empty)
 - **`develop-frontend`**: Frontend React Native application code and designs
 - **`develop-backend`**: Backend FastAPI application code and designs
 
 > **Note**: The frontend and backend source code, designs, and implementation details are located in their respective development branches (`develop-frontend` and `develop-backend`).
 
 ## 📸 Interface
+
+
+## 📸 Algorithm Comparison
+
+![Recording 2025-11-29 095932 (online-video-cutter com)](https://github.com/user-attachments/assets/4449d41d-b7b3-4374-814a-38b71dbcc552)
 
 
 ## 🚀 Features
