@@ -1,0 +1,137 @@
+/* --- The Main Grid Layout --- */
+.dashboard-grid {
+  display: grid;
+  /* 3 Columns */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 2 Rows: Auto-sized based on content */
+  grid-template-rows: auto auto;
+  gap: 24px;
+  padding-bottom: 40px;
+
+  /* THIS MAP CONTROLS PLACEMENT */
+  grid-template-areas:
+    "welcome welcome notif"
+    "stat1   stat2   stat3";
+}
+
+/* Assign grid areas to classes */
+.area-welcome { grid-area: welcome; }
+.area-notif   { grid-area: notif; }
+.area-stat1   { grid-area: stat1; }
+.area-stat2   { grid-area: stat2; }
+.area-stat3   { grid-area: stat3; }
+
+/* --- 1. Welcome Banner --- */
+.welcome-banner {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px; /* Increased padding for breathing room */
+  /* Removed fixed height! Let it grow naturally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.05);
+}
+
+.welcome-banner h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #333;
+  font-weight: 800;
+}
+
+.welcome-banner p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 16px;
+}
+
+.dashboard-mascot-img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.15));
+}
+
+/* --- 2. Notifications Panel --- */
+
+.notifications-panel h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.notif-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notif-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #555;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notif-item.success {
+  border-left: 4px solid #388E38;
+}
+
+/* --- 3. Stat Cards --- */
+.stat-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-icon-container {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #8B0000; /* Maroon accent */
+}
+
+.stat-card h3 {
+  color: #888;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.1;
+}
+
+.stat-number span {
+  font-size: 16px;
+  color: #999;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr; /* Switch to 2 columns */
+    grid-template-areas:
+      "welcome welcome"
+      "notif   notif"
+      "stat1   stat2"
+      "stat3   stat3";
+  }
+}
