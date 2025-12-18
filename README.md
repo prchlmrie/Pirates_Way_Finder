@@ -2,7 +2,7 @@
 
 A comprehensive indoor navigation application designed to help users navigate through building floors with accessibility features and intelligent pathfinding.
 
-## 📂 Repository Structure
+## Repository Structure
 
 This repository uses a multi-branch structure for organized development:
 
@@ -12,17 +12,17 @@ This repository uses a multi-branch structure for organized development:
 
 > **Note**: The frontend and backend source code, designs, and implementation details are located in their respective development branches (`develop-frontend` and `develop-backend`).
 
-## 📸 Interface
+## Interface
 
 ![Recording 2025-11-29 090423 (online-video-cutter com) (online-video-cutter com) (2)](https://github.com/user-attachments/assets/2552d193-3606-47d6-bb38-9b9611befc20)
 
 
-## 📸 Algorithm Comparison
+## Algorithm Comparison
 
 ![Recording 2025-11-29 095932 (online-video-cutter com)](https://github.com/user-attachments/assets/4449d41d-b7b3-4374-814a-38b71dbcc552)
 
 
-## 🚀 Features
+## Features
 
 - **Grid-Based Pathfinding**: Efficient navigation using Dijkstra and A* algorithms
 - **Accessibility Support**: Routes that avoid stairs and prefer ramps for wheelchair users
@@ -32,7 +32,7 @@ This repository uses a multi-branch structure for organized development:
 - **Search Functionality**: Find locations quickly with search
 - **Bookmark System**: Save favorite locations for quick access
 
-## 🏗️ Architecture
+## Architecture
 
 ### Backend
 - **Framework**: FastAPI (Python)
@@ -50,14 +50,14 @@ This repository uses a multi-branch structure for organized development:
 - **Framework**: React with TypeScript
 - **Build Tool**: Vite
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Node.js 16+
 - MongoDB (local or cloud instance)
 - Expo CLI (for mobile development)
 
-## 🔧 Installation
+## Installation
 
 ### Backend Setup
 
@@ -131,7 +131,7 @@ npm install
 npm run dev
 ```
 
-## 🧮 Algorithm Details
+## Algorithm Details
 
 ### Pathfinding Algorithm
 
@@ -173,7 +173,7 @@ The algorithm includes several optimizations:
 - **Aesthetic Paths**: Prefers paths that stay away from walls for better visual appearance
 - **Smoothing**: Path reconstruction ensures smooth navigation
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pirateswayfinder/
@@ -194,7 +194,7 @@ pirateswayfinder/
     └── src/                          # React components
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Pathfinding
 - `POST /path/shortest` - Calculate shortest path between two points
@@ -226,7 +226,7 @@ cd frontend_pirates_way_finder
 npm test
 ```
 
-## 📝 Configuration
+## Configuration
 
 ### Grid Configuration
 The grid system is configured in `backend_pirates_way_finder/app/static/grid.json`:
